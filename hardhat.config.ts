@@ -10,10 +10,10 @@ const config: HardhatUserConfig = {
       url: "http://127.0.0.1:8545/",
       chainId: 31337,
     },
-    goerli: {
-      url: process.env.GOERLI_RPC_URL,
+    sepolia: {
+      url: process.env.SEPOLIA_RPC_URL,
       accounts: [process.env.PRIVATE_KEY as string],
-      chainId: 5,
+      chainId: 11155111,
     },
   },
   namedAccounts: {
